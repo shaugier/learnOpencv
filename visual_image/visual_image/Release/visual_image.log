@@ -1,0 +1,15 @@
+﻿生成启动时间为 2015/10/29 12:50:00。
+     1>项目“C:\Users\xidian\Documents\Visual Studio 2013\Projects\visual_image\visual_image\visual_image.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /wd4819 /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\xidian\Documents\Visual Studio 2013\Projects\visual_image\Release\visual_image.exe" /INCREMENTAL:NO /NOLOGO opencv_ts300d.lib opencv_world300d.lib opencv_ts300.lib opencv_world300.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\xidian\Documents\Visual Studio 2013\Projects\visual_image\Release\visual_image.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\xidian\Documents\Visual Studio 2013\Projects\visual_image\Release\visual_image.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         正在生成代码
+         已完成代码的生成
+         visual_image.vcxproj -> C:\Users\xidian\Documents\Visual Studio 2013\Projects\visual_image\Release\visual_image.exe
+     1>已完成生成项目“C:\Users\xidian\Documents\Visual Studio 2013\Projects\visual_image\visual_image\visual_image.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.52
