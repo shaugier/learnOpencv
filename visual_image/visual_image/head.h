@@ -7,6 +7,29 @@ using namespace cv;
 using namespace std;
 
 
+bool ROI_AddImage()
+{
+	Mat src1 = imread("mushroom.png", CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
+	Mat src2 = imread("logo.png", CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
+	if (!src1.data)
+	{
+		cout << "read file mushroom.png failed, please check the filename" << endl;
+		return false;
+	}
+	if (!src2.data)
+	{
+		cout << "read file logo.png failed, please check the filename" << endl;
+		return false;
+	}
+	Mat ROI = src1(Range(250, 250 + src2.rows), Range(600, 600 + src2.cols));
+	Mat mask = imread("logo.png",  0);//it have to be gray picture
+	src2.copyTo(ROI, mask); //ROI is OutputArray, mask is InputArray
+	namedWindow("mushlogo", WINDOW_AUTOSIZE);
+	imshow("mushlogo", src1);
+	return true;
+}
+
+
 void createAlphaMat(Mat &m)
 {
 	for (int i = 0; i < m.rows; i++)

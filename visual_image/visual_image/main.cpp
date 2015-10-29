@@ -2,7 +2,27 @@
 
 int main()
 {
-	
+
+
+
+	//add logo, using mask
+	/*ROI_AddImage();
+	waitKey();*/
+
+	/*Mat logo = imread("logo.png");
+	Mat image = imread("mushroom.png",CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);
+	imshow("mushroom", image);
+
+	Mat imageROI = image(Rect(500, 250, logo.cols, logo.rows));
+	namedWindow("method1 logo", WINDOW_NORMAL);
+	imshow("method1 logo", imageROI);
+
+	Mat imageROI2 = image(Range(250, 250 + logo.rows), Range(500, 500 + logo.cols));
+	namedWindow("method2 logo", WINDOW_NORMAL);
+	imshow("method2 logo", imageROI2);
+
+	waitKey();*/
+
 
 	// 初级图像混合 opencv入门教程之三
 	/*Mat girl = imread("hair.jpg", CV_LOAD_IMAGE_ANYDEPTH | CV_LOAD_IMAGE_ANYCOLOR);//载入最原始的图像
@@ -32,8 +52,6 @@ int main()
 	compres.push_back(CV_IMWRITE_PNG_COMPRESSION);
 	compres.push_back(9);
 	imwrite("dotaLogo.jpg", image,compres);*/
-	return 0;
-	
 
 
 
@@ -155,6 +173,6 @@ int main()
 	imshow("c", c);
 	waitKey(0);*/
 
-
+	return 0;
 
 }
